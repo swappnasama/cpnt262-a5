@@ -2,7 +2,7 @@
 
 **Author and Repo maintainer:** Swapna Sama
 
-**GH repo :** [https://github.com/swappnasama/cpnt262-a4.git](https://github.com/swappnasama/cpnt262-a5.git)
+**GH repo :** [https://github.com/swappnasama/cpnt262-a5.git](https://github.com/swappnasama/cpnt262-a5.git)
 
 **Deployed Heroku URL :** [https://swapna-cpnt262-a5.herokuapp.com/](https://swapna-cpnt262-a5.herokuapp.com/)
 
