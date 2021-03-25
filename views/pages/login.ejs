@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Head partial -->
+  <%- include('../partials/head') %>
+</head>
+
+<body>
+  <!-- Header -->
+  <!-- Header partial -->
+  <%- include('../partials/header') %>
+  <!-- Main sectiom -->
+  <main>
+    <section class="login-container">
+      <form id="login-form">
+        <h2><%= loginPageTitle %></h2>
+        <input type="text" placeholder="Username" />
+        <input type="text" placeholder="Password" />
+        <button type="button" value="Login">Login</button>
+      </form>
+    </section>
+    
+  </main>
+  <!-- Footer partial -->
+  <%- include('../partials/footer') %> 
+
+</body>
+
+</html>

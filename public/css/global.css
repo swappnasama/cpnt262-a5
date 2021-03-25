@@ -1,0 +1,254 @@
+/* Reset CSS */
+body{
+  margin: 0;
+  padding: 0;
+
+  background-color:#F96C02;
+  font-family: 'Akaya Kanadaka', cursive, sans-serif;
+}
+a{
+  color:white
+}
+img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*header*/
+header,footer{
+  background-color:rgba(40, 41, 46, 0.6);
+  text-align: center;
+  color: #fff;
+  padding: 1rem 0;
+  margin: 0;
+  width: 100%;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1{
+  padding:0 1rem ;
+  text-align: center;
+  width: 100%;
+
+}
+nav{
+  position: absolute;
+  top:0;
+  width:100%;
+  background-color: #555555;
+  display: none;
+}
+nav ul{
+  list-style: none;
+
+  display: flex;
+  flex-wrap:nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 1rem;
+}
+nav ul li a:hover{
+  background-color: #F96C02;
+}
+/* mobile menu  js version*/
+.mobile-nav{
+  display: block;
+  width: 50px;
+  height: 50px;
+
+  background-image: url("../images/mobile-menu.svg");
+  background-position: center;
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  cursor: pointer;
+}
+
+.close{
+
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../images/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: absolute;
+  top: 25px;
+  left: 25px;
+
+  cursor: pointer;
+}
+
+.show{
+  display: block;
+}
+
+/* main section styles*/
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width:90vw;
+  margin: 0 auto;
+}
+
+/* Figure and figure caption styles */
+figure{
+  width:300px;
+  height:400px;
+  position: relative;
+  margin: 0;
+}
+/* Displays fig caption only on hover */
+figure:hover figcaption{
+  visibility: visible;
+}
+figcaption {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   
+  position: absolute;
+  bottom: 0;
+
+  background-color: rgba(40, 41, 46, 0.6);
+
+  color: #fff;
+  text-align: center;
+
+  font-size: 18px;
+
+  visibility: hidden;
+
+  
+}
+figcaption h5{
+  font-size:24px;
+  margin: 10px 0;
+  
+}
+figcaption p{
+  width:95%;
+  margin: 10px auto;
+}
+/* Error page styles */
+.error-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.error-page section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
+  padding: 1rem;
+
+  text-align: center;
+  border: 2px solid white;
+  color:white;
+
+}
+.error-page h1{
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+/* form styles */
+form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width:300px;
+
+  padding: 2rem;
+  margin: 20px;
+  background-color: #fff;
+  
+
+}
+input,button{
+  padding:1rem;
+  width:250px;
+  margin: 10px 0;
+  
+}
+.login-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100VW;
+    height: 80vh;
+}
+button{
+  
+  background-color: #F96C02;
+  text-align: center;
+  color: #fff;
+  border: none;
+  width: 150px;
+  font-weight: bold;
+}
+button:hover{
+  background-color: #555555;
+}
+/* single image styles */
+.single-img{
+  object-fit: contain;
+  margin-bottom: 20px;
+  height: auto;
+}
+@media (min-width: 600px) {
+  .single-img{
+    height: 100vh;
+  }
+}
+/* Desktop specific styles */
+@media (min-width: 1200px) {
+
+  nav{
+    position: relative;
+    display: block;
+    background: none;
+    width: auto;
+  }
+  header h1{
+    text-align: center;
+    width: auto;
+
+  }
+  nav ul{
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .mobile-nav{
+    display: none;
+  }
+  .close{
+    display: none;
+  }
+  
+
+}

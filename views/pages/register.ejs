@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Head partial -->
+  <%- include('../partials/head') %>
+</head>
+
+<body>
+  <!-- Header -->
+  <!-- Header partial -->
+  <%- include('../partials/header') %>
+  <!-- Main sectiom -->
+  <main>
+    <section class="login-container">
+      <form id="login-form">
+        <h2><%= RegisterPageTitle %></h2>
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="Last Name" />
+        <input type="email" placeholder="Email"/>
+        <input type="text" placeholder="Username" />
+        <input type="text" placeholder="Password" />
+        <input type="tel" placeholder="Phone Number" />
+        <button type="button" value="Register">Register</button>
+      </form>
+    </section>
+  </main>
+  <!-- Footer partial -->
+  <%- include('../partials/footer') %> 
+
+</body>
+
+</html>
